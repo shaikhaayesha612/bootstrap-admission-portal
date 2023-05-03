@@ -1,0 +1,204 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="dist/css/bootstrap.css"/>
+		<link rel="stylesheet" href="icon/css/all.css"/>
+		<script src="dist/js/bootstrap.bundle.min.js"></script>	<!-- for functionality purpose-->		
+		<style>
+			@media screen and (min-width:0px) and (max-width:1000px){
+			.ps-5{padding-left:0px !important; }
+			}
+		</style>
+	</head>
+		
+	<body>
+		<section class="bg-light p-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+						<h6> Technical Help - +91-8888888888 </h6> 
+					</div>
+					<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 text-end">
+						<a class="text-decoration-none"  href="#">Welcome, SBIC Admin- Logout</a> 						
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- top navigation starts here -->
+		<nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Admin SBIC-UP</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" 
+						aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav me-auto mb-2 mb-md-0">
+						<li class="nav-item">
+							<a class="nav-link active" href="home_3_1.html">
+								<i class="fa fa-home"></i> Dashboard 
+							</a>
+						</li>
+						
+						<li class="nav-item dropdown ps-2">
+							<a class="btn dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<i class="fa fa-plus"></i> Admission
+							</a>
+							<ul class="dropdown-menu dropdown-menu-dark">
+								<li><a class="dropdown-item" href="new_emp.html">New Employee</a></li>
+								<li><a class="dropdown-item" href="new_admission.html">New Admission</a></li>
+								<li><a class="dropdown-item" href="admission_list.html">Admission List</a></li>
+							</ul>
+						</li>
+						
+						<li class="nav-item dropdown ps-2">
+							<a class="btn dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<i class="fa fa-suitcase"></i> Fee Payment
+							</a>
+							<ul class="dropdown-menu dropdown-menu-dark">
+								<li><a class="dropdown-item" href="fee_collection.html">Fee Collection</a></li>
+								<li><a class="dropdown-item" href="total_payments.html">Total Payments</a></li>
+								<li><a class="dropdown-item" href="finance_report.html">Finance Rreport</a></li>
+							</ul>
+						</li>
+						
+						<li class="nav-item dropdown ps-2">
+							<a class="btn dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<i class="fa fa-bus"></i> Transport
+							</a>
+							<ul class="dropdown-menu dropdown-menu-dark">
+								<li><a class="dropdown-item" href="transport_user.html">Transport Users</a></li>
+								<li><a class="dropdown-item" href="manage_transport.html">Manage Transport</a></li>
+							</ul>
+						</li>
+						
+						<li class="nav-item ps-4">
+							<a class="nav-link active" href="exam.html">
+								<i class="fa fa-pen-square"></i> Exam 
+							</a>
+						</li>
+						<li class="nav-item ps-4">
+							<a class="nav-link active" href="activity.html">
+								<i class="fa fa-star"></i> Activity
+							</a>
+						</li>
+						
+						<li class="nav-item dropdown ps-2">
+							<a class="btn dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<i class="fa fa-gear"></i> Admin
+							</a>
+							<ul class="dropdown-menu dropdown-menu-dark">
+								<li><a class="dropdown-item" href="settings.html">Settings</a></li>
+								<li><a class="dropdown-item" href="terms_rights.html">Terms & Rights</a></li>
+							</ul>
+						</li>
+						
+						<li class="nav-item dropdown ps-2">
+							<a class="btn dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<i class="fa fa-user"></i> Account
+							</a>
+							<ul class="dropdown-menu dropdown-menu-dark">
+								<li><a class="dropdown-item" href="add_account.html">Add Another Account</a></li>
+								<li><a class="dropdown-item" href="signout.html">SignOut</a></li>
+							</ul>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</nav>
+			
+		<!-- top navigation ends here -->
+		
+		<div class="container mt-5">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="card mt-5">
+								<div class="card-header text-danger"> New Transport </div>
+								
+								<div class="card-body">
+									<div>
+										<label> Transport Number </label>
+										<input type="number" class="form-control"/> 
+									</div>
+									<div>
+										<label> Root Name </label>
+										<input type="text" class="form-control"/> 
+									</div>
+									<div>
+										<label> Size </label>
+										<select class="form-select">
+											<option value="1"> </option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+										</select>
+									</div>
+									<div>
+										<label> Driver Name </label>
+										<input type="text" class="form-control"/> 
+									</div>
+									<div>
+										<label> Driver Mobile No </label>
+										<input type="number" class="form-control"/> 
+									</div>
+								</div>
+								
+								<div class="card-footer bg-white border-0 text-center"> 
+									<button class="btn btn-primary"> Save </button>
+								</div>
+							</div>	<!--card end-->
+						</div>	<!-- 12 end -->
+			
+					</div>
+				
+				</div>	<!-- 3 end -->
+				
+				<div class="col-lg-9">
+					<div class="row mb-3">
+						<div class="col-lg-8">
+							<h4 class="text-info"> Manage Transport : 1 </h4> 
+						</div>
+						<div class="col-lg-4">
+							<input type="search" class="form-control" placeholder="Search"/>
+						</div>
+					</div>	<!-- row end -->
+					
+					<div class="row mb-3">
+						<div class="col-lg-12">
+							<table class="table table-bordered">
+								<tr class="bg-light text-danger">
+									<th>T-Id</th>
+									<th>T-Number</th>
+									<th>Type</th>
+									<th>Transport Root</th>
+									<th>Driver</th>
+									<th>Mobile No</th>
+									<th>Action</th>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>VEHICLE-1</td>
+									<td>Small</td>
+									<td>BUJURGA</td>
+									<td>Akash Yadav</td>
+									<td>7007932171</td>
+									<td>
+										<button class="btn btn-warning text-white"> <i class="fa fa-plus"></i> Root Master </button>
+									</td>						
+								</tr>
+							</table>
+						</div>
+					</div>	<!-- row end -->
+				
+				</div>	<!-- 9 end -->
+			
+			</div>
+		</div>
+		
+		
+	</body>
+</html>
